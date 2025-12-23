@@ -25,3 +25,11 @@ I built a Python ETL pipeline that:
 ├── notebooks/          # Jupyter Notebooks for EDA and prototyping
 ├── src/                # Production-ready Python scripts
 └── requirements.txt    # Dependencies
+```
+## ✦ Example Audit Log Output
+```text
+[2025-12-23 18:35:03] PIPELINE STARTED. Loaded 1,000,000 rows.
+[2025-12-23 18:35:04] Standardized column names to snake_case.
+[2025-12-23 18:35:04] Imputed 333,943 missing 'promotion' values with 'None'.
+[2025-12-23 18:35:04] Converted 'date' column to datetime objects.
+[2025-12-23 18:35:08] SUCCESS: Saved clean data to ../data/processed/clean_data.csv
